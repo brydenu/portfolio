@@ -7,11 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      dropShadow: {
+        'nav-blur': '0, 30, 30, rgb(255,255,255)',
       },
+      fontFamily: {
+        pt: ["PT Serif", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"]
+      }
     },
   },
   plugins: [],
