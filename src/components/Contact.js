@@ -5,9 +5,9 @@ export default function Contact() {
             <div className="w-full flex flex-col gap-5">
                 <h2 className="text-5xl text-center">Contact</h2>
                 <p className="text-md font-montserrat text-center">
-                    I'm always open to grabbing a coffee (virtually or IRL),
+                    I&apos;m always open to grabbing a coffee (virtually or IRL),
                     and I always love hearing about new ideas and opportunities.
-                    Feel free to reach out and let's see how we can work together!
+                    Feel free to reach out and let&apos;s see how we can work together!
                 </p>
             </div>
             <form className="w-full flex flex-col gap-4">

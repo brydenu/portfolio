@@ -14,9 +14,13 @@ export default function Projects() {
     return (
         <section className="w-full min-h-screen flex flex-col mt-48" id="projects">
             <div className="w-full ">
-                <h2 className="text-4xl text-start font-pt">Projects</h2>
+                <h2 className="text-4xl text-start font-pt">Current Project</h2>
+                <p className="text-sm font-montserrat my-1">What I&apos;m working on right now</p>
             </div>
             <Project data={blfscafeData} />
+            <div className="w-full">
+                <h3 className="text-lg font-montserrat text-center my-12">Check out my other projects on my <a href="https://www.github.com/brydenu" target="_blank" className="underline">Github</a></h3>
+            </div>
         </section>
     )
 }

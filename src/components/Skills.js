@@ -56,10 +56,10 @@ export default function Skills() {
         <section className="w-full flex flex-col justify-center align-middle font-montserrat my-24" id="skills">
             <h2 className="font-pt text-4xl text-center mb-8">Skills</h2>
             <div className="w-full flex flex-row flex-wrap sm:flex-nowrap justify-center">
-                {row1Skills.map((skill) => <Skill imgSrc={skill.src} title={skill.title} />)}
+                {row1Skills.map((skill, idx) => <Skill key={`skill-${idx}`} imgSrc={skill.src} title={skill.title} />)}
             </div>
             <div className="w-full flex flex-row flex-wrap sm:flex-nowrap justify-center">
-                {row2Skills.map((skill) => <Skill imgSrc={skill.src} title={skill.title} />)}
+                {row2Skills.map((skill, idx) => <Skill key={`skill-${idx}`} imgSrc={skill.src} title={skill.title} />)}
             </div>
         </section>
     )
