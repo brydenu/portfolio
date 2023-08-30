@@ -14,7 +14,7 @@ export default function About() {
                     alt="HTML tag icon"
                 />
                 <div className="font-montserrat text-md flex flex-col justify-evenly text-center font-montserrat">
-                    <p>
+                    <p className="pb-5 sm:pb-1">
                         Hello again! Thank you for visiting my portfolio!
                         My name is Bryden and I&apos;m a software engineer based out of
                         Seattle, Washington. I love being creative, and finding solutions

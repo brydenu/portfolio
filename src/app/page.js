@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center scroll-smooth">
       <Navbar />
-      <div className="px-40">
+      <div className="sm:px-40">
         <Header />
         <About />
         <Skills />

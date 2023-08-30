@@ -6,9 +6,9 @@ export default function Project({ data }) {
     
     return (
         <div className="flex flex-col sm:flex-row font-montserrat">
-            <div className="flex flex-col justify-evenly">
-                <h3 className="text-3xl font-bold">{title}</h3>
-                <p className="text-md text-start">
+            <div className="flex flex-col justify-center sm:justify-evenly">
+                <h3 className="text-3xl font-bold text-center sm:text-start">{title}</h3>
+                <p className="text-md text-center sm:text-start py-6 sm:py-0">
                     {description}
                 </p>
                 <div className="flex flex-row gap-2">
