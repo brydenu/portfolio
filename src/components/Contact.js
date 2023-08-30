@@ -67,7 +67,7 @@ export default function Contact() {
                         </>
                     )
                     :
-                (<p className="text-center py-5 font-bold">Message sent. Thank you for reaching out! I'll respond as soon as I can 🤓</p>)
+                (<p className="text-center py-5 font-bold">Message sent. Thank you for reaching out! I&apos;ll respond as soon as I can 🤓</p>)
             }
                 
             </form>
