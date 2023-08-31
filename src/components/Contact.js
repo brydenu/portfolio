@@ -74,7 +74,7 @@ export default function Contact() {
                         <>
                             <button type="submit" className="text-black bg-white w-40 h-10 self-end rounded-sm hover:bg-gray-300 active:bg-black active:text-white active:border-2 active:border-white duration-200 flex flex-col justify-center align-middle">
                                 {
-                                    !isLoading ? (
+                                    isLoading ? (
                                         <div className="flex justify-center">
                                             <BeatLoader color="#505050" size={8} loading={true} aria-label="Loading Spinner" />
                                         </div>
