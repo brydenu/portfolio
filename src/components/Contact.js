@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from "react"
+import { BeatLoader } from "react-spinners";
 import sendEmail from "@/utils/sendEmail";
 
 export default function Contact() {
@@ -8,12 +9,16 @@ export default function Contact() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [submitStatus, setSubmitStatus] = useState("unsent");
+    const [isLoading, setIsLoading] = useState(false);
     const [formFieldError, setFormFieldError] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
+        
         if (!name || !email || !message) {
             setFormFieldError(true);
+            setIsLoading(false);
             return;
         }
         const data = {
@@ -27,10 +32,16 @@ export default function Contact() {
 
         if (sentEmail.status === 200) {
             setSubmitStatus("success");
+            setName("");
+            setEmail("");
+            setMessage("");
+            setFormFieldError(false);
+            setIsLoading(false);
+
         } else {
             setSubmitStatus("error");
+            setIsLoading(false);
         }
-        console.log("sentEmail", sentEmail);
     }
 
     return (
@@ -61,7 +72,17 @@ export default function Contact() {
                 {submitStatus !== "success" ? 
                     (
                         <>
-                            <button type="submit" className="text-black bg-white w-40 h-10 self-end rounded-sm hover:bg-gray-300 active:bg-black active:text-white active:border-2 active:border-white duration-200">SEND</button>
+                            <button type="submit" className="text-black bg-white w-40 h-10 self-end rounded-sm hover:bg-gray-300 active:bg-black active:text-white active:border-2 active:border-white duration-200 flex flex-col justify-center align-middle">
+                                {
+                                    !isLoading ? (
+                                        <div className="flex justify-center">
+                                            <BeatLoader color="#505050" size={8} loading={true} aria-label="Loading Spinner" />
+                                        </div>
+                                    ) 
+                                    :
+                                    <p className="">SEND</p>
+                            }
+                            </button>
                             {submitStatus === "error" && (<p className="text-red-700">Error sending email - please try again later, sorry!</p>)}
                             {formFieldError && <p className="text-red-700 text-center">Please fill out all fields before sending a message. Thank you!</p>}
                         </>
