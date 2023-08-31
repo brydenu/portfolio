@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <section className="flex flex-col w-full pb-20" id="about">
+        <section className="flex flex-col w-full pb-20 px-4 sm:px-0" id="about">
             <div className="w-full ">
                 <h2 className="text-4xl text-end font-pt">About</h2>
             </div>

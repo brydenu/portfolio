@@ -11,9 +11,9 @@ export default function Project({ data }) {
                 <p className="text-md text-center sm:text-start py-6 sm:py-0">
                     {description}
                 </p>
-                <div className="flex flex-row gap-2">
-                    <button className="w-40 h-10 bg-black text-white bold rounded" href={liveUrl}>Live Site</button>
-                    <button className="w-40 h-10 bg-white border-2 border-black text-black bold rounded" href={ghUrl}>Github Repo</button>
+                <div className="flex flex-row gap-2 justify-center sm:justify-start">
+                    <a href={liveUrl}><button className="w-40 h-10 bg-black text-white bold rounded">Live Site</button></a>
+                    <a href={ghUrl}><button className="w-40 h-10 bg-white border-2 border-black text-black bold rounded">Github Repo</button></a>
                 </div>
             </div>
             <Image
