@@ -15,7 +15,7 @@ export default function About() {
                 />
                 <div className="font-montserrat text-md flex flex-col justify-evenly text-center font-montserrat">
                     <p className="pb-5 sm:pb-1">
-                        Hello again! Thank you for visiting my portfolio!
+                        Hello again, and thank you for visiting my portfolio!
                         My name is Bryden and I&apos;m a software engineer based out of
                         Seattle, Washington. I love being creative, and finding solutions
                         to every day problems with technology or otherwise.
