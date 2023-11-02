@@ -1,5 +1,4 @@
 import { default as sendGridEmail } from "@/utils/sendGridEmail";
-import { NextResponse } from "next/server";
 
 export async function POST(request) {
     const data = await request.json();

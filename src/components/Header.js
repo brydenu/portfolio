@@ -22,7 +22,7 @@ export default function Header() {
 
 
     const scrollToAbout = () => {
-        const targetComponent = document.getElementById("about");
+        const targetComponent = document.getElementById("skills");
         if (targetComponent) {
             const navbarHeight = 116;
             const targetPosition = targetComponent.getBoundingClientRect().top + window.scrollY - navbarHeight;

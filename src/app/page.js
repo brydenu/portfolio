@@ -12,9 +12,9 @@ export default function Home() {
       <Navbar />
       <div className="sm:px-40">
         <Header />
-        <About />
         <Skills />
         <Projects />
+        <About />
       </div>
       <Contact />
     </main>
