@@ -7,7 +7,7 @@ export default function Projects() {
         description: "Remote coffee ordering website, users to create accounts to customize, save, and order drinks while being able to track status of drinks and when they're ready. Guest ordering is also an option.",
         liveUrl: "https://cafe2go.brydenuyehara.com",
         ghUrl: "https://github.com/brydenu/cafe2go",
-        image: "/cafe_mockup.jpg",
+        image: "/cafe_mockup.png",
         imgAltText: "Macbook with Cafe2Go web app on screen"
     }
     
