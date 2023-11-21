@@ -19,7 +19,7 @@ export default function Projects() {
             </div>
             <Project data={cafe2GoData} />
             <div className="w-full">
-                <h3 className="text-lg font-montserrat text-center my-12">Check out my other projects on my <a href="https://www.github.com/brydenu" target="_blank" className="underline">Github</a></h3>
+                <h3 className="text-lg font-montserrat text-center mt-12">Check out my other projects on my <a href="https://www.github.com/brydenu" target="_blank" className="underline">Github</a></h3>
             </div>
         </section>
     )

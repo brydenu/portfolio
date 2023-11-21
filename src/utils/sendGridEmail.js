@@ -1,6 +1,8 @@
 import sgMail from "@sendgrid/mail";
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+const API_KEY = process.env.SENDGRID_API_KEY;
+
+sgMail.setApiKey(API_KEY);
 
 export default async function sendGridEmail(msgData) {
     try {
