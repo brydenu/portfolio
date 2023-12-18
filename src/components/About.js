@@ -15,18 +15,20 @@ export default function About() {
                 />
                 <div className="font-montserrat text-md flex flex-col justify-evenly text-center font-montserrat">
                     <p className="pb-5 sm:pb-1">
-                        Hello again, and thank you for visiting my portfolio!
-                        My name is Bryden and I&apos;m a software engineer based out of
-                        Seattle, Washington. I love being creative, and finding solutions
+                        <b classNam="font-bold">Hello again,</b> and thank you
+                        for visiting my portfolio! My name is Bryden and
+                        I&apos;m a software engineer based out of Seattle,
+                        Washington. I love being creative, and finding solutions
                         to every day problems with technology or otherwise.
                     </p>
                     <p>
-                        Outside of code, I love learning all sorts of things and trying new
-                        hobbies when I can. I am addicted to the feeling I get when I start
-                        to see improvements, whether it is as a software engineer or otherwise.
+                        Outside of code, I love learning all sorts of things and
+                        trying new hobbies when I can. I am addicted to the
+                        feeling I get when I start to see improvements, whether
+                        it is as a software engineer or otherwise.
                     </p>
                 </div>
             </div>
         </section>
-    )
+    );
 }
