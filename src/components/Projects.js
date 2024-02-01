@@ -11,7 +11,7 @@ export default function Projects() {
         imgAltText: "Macbook with Cafe2Go web app on screen",
     };
     const wordleCloneData = {
-        title: "Wordle Clone",
+        title: "Wordle Clone (Work in Progress)",
         description:
             "Clone of the popular New York Times word game. Users have six tries to guess a random word using the information from the guesses before. Words are randomized out of a list and change upon every visit to the page.",
         liveUrl: "https://wordle.brydenuyehara.com",
